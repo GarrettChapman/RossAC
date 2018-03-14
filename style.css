@@ -1,0 +1,42 @@
+/*body {
+  background-image: url("https://static1.squarespace.com/static/58f0e333bebafbc81fc1764e/58f764d1f7e0ab3d069ceafc/5a733870c8302533f762f78a/1517500529389/Trane-vs-American-Standard-air-conditioner-review-Trane-AC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://static1.squarespace.com/static/58f0e333bebafbc81fc1764e/58f764d1f7e0ab3d069ceafc/5a733870c8302533f762f78a/1517500529389/Trane-vs-American-Standard-air-conditioner-review-Trane-AC.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header {
+  position: fixed;
+  padding: 5px;
+  background-color: #ffffff82 ;
+}
+
+.logo {
+  padding: 2%;
+  width: 250px;
+  height: 150px;
+  background-color: white;
+}
+
+
+.threeRights {
+  padding: 5%;
+}
