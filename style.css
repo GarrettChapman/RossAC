@@ -26,7 +26,8 @@ body, html {
 .header {
   position: fixed;
   padding: 5px;
-  background-color: #ffffff82 ;
+  /*background-color: #ffffff82 ;*/
+  background-color: white;
 }
 
 .logo {
