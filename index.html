@@ -1,60 +1,117 @@
 <!DOCTYPE html>
-<html ng-app="rossApp">
-  <head>
-    <link rel="stylesheet" href="style.css">
+<html>
+<title>Ross AC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
 
-    <meta charset="utf-8">
-    <title>Ross AC</title>
-  </head>
-  <body ng-controller="rossCtrl">
-
-    <!-- {{test}} -->
-
-<div class="header">
-  <div class= "" id="home">
-    <img src="/img/rossAClogo.png" class="logo" alt="">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Ross AC & Heat</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#services" class="w3-bar-item w3-button">Services</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
   </div>
 </div>
 
-<div class="parallax"></div>
-
-<div style="height:1000px;background-color:gray;font-size:36px">
- <center>
-   <div class="threeRights">
-
-  <h7>The Right Equipment</h1>
-  <br>
-  <p>Every Trane product is designed down to every detail and rigorously tested for reliability and durability. While other  manufacturers build their products from the same "pool" of parts available to anyone, Trane makes it a point to be uniquely better, innovative and always looking to the future.</p>
-
-    <br>
-
-    <h7>The Right Experience</h7>
-    <br>
-    <p>
-Our Experience: With over 20 years of residential air conditioning and heating experience, our factory trained technicians have the expertise to solve any residential air conditioning or heating problem you have. Whether you need service, repairs or equipment installation, you can count on us to get the job done right the first time.
-<br>
-Your Experience:  Our team works hard to make sure that each customer has the best experience possible when working with us. We understand how difficult living with cooling system problems can be in the Texas heat as well as the importance of a warm, comfortable home on those cold winter nights. We always strive to address and solve your problem as quickly and affordably as possible.  Customer satisfaction guaranteed.</p>
-
-    <br>
-
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
   </div>
-</center>
-</div>
+</header>
 
-<div class="parallax"></div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/img/rossAClogo.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Ross Air Conditioning and Heat</h1><br>
+      <!-- <h5 class="w3-center">Tradition since 1889</h5> -->
+      <p class="w3-large">
+Ross Air Conditioning and Heat has been providing the Dallas are area with residential sales, service and installation since 1993.  We specialize in efficient, reliable HVAC solutions that are tailored to meet the specific needs of our customers.
 
 
+At the heart of our success lies level of customer commitment that is unmatched by other Dallas TX AC companies.  We are a BBB accredited businesss which exemplifies our commitment to customer satisfaction.
 
-    <div class="">
-      <ui-view></ui-view>
+
+Invest your time and money wisely, and trust Ross Air Conditiong and Heat over other AC companies for all of your indoor comfort needs needs. You will not be disappointed!</p>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="services">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="">Our Services</h1><br>
+      <h4>Air Conditioners</h4>
+        <br>
+      <h4>Thermostats</h4>
+        <br>
+      <h4>Furnaces</h4>
+        <br>
+      <h4>Coils</h4>
+        <br>
+      <h4>Heat Pumps</h4>
+        <br>
+      <h4>Ductless Systems</h4>
+        <br>
+      <h4>Air Handlers</h4>
+
     </div>
 
 
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
-    <script src="/index.js" charset="utf-8"></script>
-    <script src="/rossCtrl.js" charset="utf-8"></script>
 
 
-  </body>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://www.carjon.com/sites/default/files/styles/sc_940x470_mc/public/blog/trane-ac-unit-install1.jpg?itok=Fnu1rWcK" class="w3-round w3-image w3-opacity-min" alt="Services" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>5565 Creekview Dr, Farmersville, TX 75442</b></p>
+    <p>You can also contact us by phone at (972) 843-2791 or email RossAC@email.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+
+</footer>
+
+</body>
 </html>
